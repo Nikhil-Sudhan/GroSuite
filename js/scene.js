@@ -81,10 +81,9 @@ function layout() {
   renderer.setSize(w, h, false);
   camera.aspect = w / h;
   camera.updateProjectionMatrix();
-  const wide = w / h > 1.1;
-  baseY = wide ? 0 : 1.5;
-  rig.position.set(wide ? 2.3 : 0.6, baseY, 0);
-  const scale = wide ? 1 : Math.min(0.75, Math.max(0.45, (w / h) * 1.1));
+  baseY = 0;
+  rig.position.set(0, baseY, 0);
+  const scale = Math.min(1.2, (w / h) * 0.9);
   rig.scale.setScalar(scale);
   for (const o of orbits) {
     o.position.copy(rig.position);

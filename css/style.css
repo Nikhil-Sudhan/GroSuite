@@ -45,6 +45,15 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 
 .sprite { position: absolute; width: 0; height: 0; overflow: hidden; }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
 .ico {
   width: 24px;
   height: 24px;
@@ -429,7 +438,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 
 .bento__item h3 { position: relative; font-size: clamp(1.4rem, 2.2vw, 1.8rem); }
 
-.bento__item p { position: relative; margin: 0.7rem 0 0; max-width: 42ch; color: var(--on-dark-dim); }
+.bento__item p { position: relative; margin: 0; max-width: 42ch; font-size: 1.12rem; color: var(--on-dark-dim); }
 
 /* enterprise hub */
 

@@ -288,6 +288,12 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .tile--dark { background: var(--ink); color: var(--on-dark); }
 .tile--paper { background: var(--paper); color: var(--on-light); }
 .tile--white { background: var(--white); color: var(--on-light); }
+.tile--glow {
+  background:
+    radial-gradient(60% 50% at 50% 0%, rgba(47, 123, 255, 0.22), transparent 70%),
+    #0b1430;
+}
+
 .tile--cta { background: var(--accent-deep); color: #fff; }
 
 .tile--cta .kicker { color: rgba(255, 255, 255, 0.8); }
@@ -393,43 +399,37 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 }
 
 .bento__item {
+  position: relative;
+  overflow: hidden;
+  min-height: 260px;
   display: flex;
   flex-direction: column;
-  padding: 1.8rem 2rem 2rem;
+  justify-content: flex-end;
+  padding: 2rem;
   border: 1px solid var(--line-dark);
-  border-radius: 22px;
-  background: var(--surface-dark);
+  border-radius: 24px;
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.015));
 }
 
 .bento__item--wide { grid-column: span 2; }
 
-.viz {
-  display: block;
-  width: 100%;
-  height: 150px;
-  margin-bottom: 1.6rem;
+.bento__mark {
+  position: absolute;
+  top: 0.6rem;
+  right: 1.4rem;
+  font-size: clamp(4rem, 9vw, 7.5rem);
+  font-weight: 800;
+  letter-spacing: -0.06em;
+  line-height: 1;
+  background: linear-gradient(180deg, rgba(94, 155, 255, 0.45), rgba(94, 155, 255, 0));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
-.viz__edge, .viz__link { fill: none; stroke: var(--soft-dark); stroke-width: 1.5; }
-.viz__link { stroke-width: 3; }
-.viz__node { fill: #3a4568; }
-.viz__key { fill: var(--accent); }
-.viz__hash { fill: none; stroke: #6c7899; stroke-width: 3; stroke-linecap: round; }
-.viz__label { fill: var(--on-dark-dim); font: 600 13px "Manrope", sans-serif; text-anchor: middle; }
+.bento__item h3 { position: relative; font-size: clamp(1.4rem, 2.2vw, 1.8rem); }
 
-.viz__runner {
-  fill: #fff;
-  animation: run 5s var(--ease) infinite;
-}
-
-@keyframes run {
-  0% { transform: translateX(0); }
-  80%, 100% { transform: translateX(340px); }
-}
-
-.bento__item h3 { font-size: clamp(1.35rem, 2.1vw, 1.7rem); }
-
-.bento__item p { margin: 0.6rem 0 0; max-width: 46ch; color: var(--on-dark-dim); }
+.bento__item p { position: relative; margin: 0.7rem 0 0; max-width: 42ch; color: var(--on-dark-dim); }
 
 /* enterprise hub */
 
@@ -861,7 +861,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .reveal { opacity: 1; transform: none; transition: none; }
-  .viz__runner, .cycle__ring { animation: none; }
+  .cycle__ring { animation: none; }
 }
 
 /* responsive */
@@ -896,8 +896,8 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   .hero__stage { min-height: 360px; }
 
   .grid--4, .pillars { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .bento { grid-template-columns: 1fr; }
-  .bento__item--wide { grid-column: auto; }
+  .bento { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .bento__item--wide { grid-column: span 2; }
   .feature, .case { grid-template-columns: 1fr; }
   .feature__art { max-width: 420px; justify-self: center; }
   .steps { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2.5rem 2rem; }
@@ -922,7 +922,9 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   :root { --gutter: 1rem; }
 
   .tile { padding-block: 4.5rem; }
-  .grid--4, .steps { grid-template-columns: 1fr; }
+  .grid--4, .steps, .bento { grid-template-columns: 1fr; }
+  .bento__item--wide { grid-column: auto; }
+  .bento__item { min-height: 200px; }
 
   .flow { grid-template-columns: 1fr; gap: 1.4rem; justify-items: start; }
   .flow::before { top: 36px; bottom: 36px; left: 36px; right: auto; border-top: 0; border-left: 2px dashed #c3c8d6; }

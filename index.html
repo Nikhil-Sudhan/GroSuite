@@ -1,0 +1,915 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>GroSuite | Perfect &amp; Prompt | Technology That Builds Your Business</title>
+
+  <meta name="description" content="GroSuite builds custom software, AI, cloud and enterprise solutions that help growing businesses work smarter.">
+  <meta name="theme-color" content="#070b19">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js"
+      }
+    }
+  </script>
+
+  <script src="js/main.js" defer></script>
+  <script type="module" src="js/scene.js"></script>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <header class="nav" id="top">
+    <div class="nav__row">
+
+<!-- GroSuite Logo with Slogan -->
+<a class="logo logo--with-slogan"
+   href="index.html"
+   aria-label="GroSuite home">
+
+  <span class="logo__wordmark">
+    <span>GR</span>
+
+    <svg class="logo__ring"
+         viewBox="0 0 40 40"
+         aria-hidden="true">
+      <path d="M20 4 A16 16 0 0 0 4 20"/>
+      <path d="M20 4 A16 16 0 0 1 36 20"/>
+      <path d="M36 20 A16 16 0 0 1 20 36"/>
+      <path d="M4 20 A16 16 0 0 0 20 36"/>
+    </svg>
+
+    <span>SUITE</span>
+  </span>
+
+  <span class="logo__slogan">PERFECT &amp; PROMPT</span>
+
+</a>
+
+      <button
+        class="nav__toggle"
+        aria-controls="menu"
+        aria-expanded="false"
+        aria-label="Open navigation menu">
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav__links" id="menu" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#solutions">Solutions</a>
+        <a href="index.html#industries">Industries</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="partnership.html">Partnership</a>
+        <a href="career.html">Careers</a>
+        <a class="nav__cta" href="enquire.html">
+          Enquire <span aria-hidden="true">↗</span>
+        </a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero section-wrap">
+
+      <div class="hero__text">
+        <p class="eyebrow">
+          <span class="eyebrow__dot"></span>
+          Custom Software • AI • Cloud • Enterprise
+        </p>
+
+        <h1>
+          Build smarter.<br>
+          Scale faster.<br>
+          <span class="gradient-text">Go digital.</span>
+        </h1>
+
+        <p class="hero__sub">
+          We design practical, reliable digital solutions that simplify
+          operations, connect teams, automate processes and help your
+          business grow with confidence.
+        </p>
+
+        <div class="actions actions--left">
+          <a class="btn" href="enquire.html">
+            Start a project <span aria-hidden="true">→</span>
+          </a>
+
+          <a class="btn btn--ghost" href="#services">
+            Explore services
+          </a>
+        </div>
+
+        <div class="hero__trust">
+          <span class="trust-dot"></span>
+          Software solutions shaped around your business
+        </div>
+      </div>
+
+      <div
+        class="hero__stage"
+        aria-label="Animated four-colour GroSuite ring representing connected technology">
+
+        <div class="hero__glow"></div>
+        <canvas id="hero-canvas" aria-hidden="true"></canvas>
+
+        <div class="orbit orbit--one" aria-hidden="true"></div>
+        <div class="orbit orbit--two" aria-hidden="true"></div>
+
+        <span class="float float--ai">AI &amp; Automation</span>
+        <span class="float float--cloud">Cloud</span>
+        <span class="float float--data">Data</span>
+        <span class="float float--enterprise">Enterprise</span>
+
+      </div>
+
+    </section>
+
+    <!-- Business approach -->
+    <section class="intro-band">
+      <div class="section-wrap intro-band__inner">
+
+        <p class="eyebrow">TECHNOLOGY THAT BUILDS YOUR BUSINESS</p>
+        <center>
+        <h2>
+          From business challenges<br class="desktop-only">
+          to digital solutions.
+        </h2>
+        </center>
+
+        <p>
+          Custom software, AI, cloud and enterprise systems designed
+          around the way your team works.
+        </p>
+
+        <div class="journey" aria-label="Our approach">
+
+          <div class="journey__item">
+            <span>01</span>
+            <b>Understand</b>
+            <small>Your challenge</small>
+          </div>
+
+          <div class="journey__connector" aria-hidden="true"></div>
+
+          <div class="journey__item">
+            <span>02</span>
+            <b>Build</b>
+            <small>The right solution</small>
+          </div>
+
+          <div class="journey__connector" aria-hidden="true"></div>
+
+          <div class="journey__item">
+            <span>03</span>
+            <b>Improve</b>
+            <small>Every workflow</small>
+          </div>
+
+          <div class="journey__connector" aria-hidden="true"></div>
+
+          <div class="journey__item journey__item--last">
+            <span>04</span>
+            <b>Grow</b>
+            <small>With confidence</small>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section tile tile--white" id="services">
+      <div class="section-wrap">
+
+        <p class="eyebrow">WHAT WE DO</p>
+        <center>
+        <h2>Technology solutions built around your business.</h2>
+        </center>
+
+        <p class="section-lede">
+          Flexible technology services to solve real problems,
+          strengthen operations and prepare your business for what comes next.
+        </p>
+
+        <div class="card-grid card-grid--4">
+
+          <article class="service-card reveal">
+            <div class="service-card__icon icon-blue" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <rect x="3" y="4" width="18" height="16" rx="2"/>
+                <path d="M8 9h8M8 13h5M8 17h3"/>
+              </svg>
+            </div>
+
+            <h3>Custom software</h3>
+
+            <p>
+              Purpose-built web and business applications aligned
+              with your workflows, teams and goals.
+            </p>
+
+            <a href="enquire.html" class="text-link">
+              Discuss a project <span>↗</span>
+            </a>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-card__icon icon-purple" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M7 18a5 5 0 0 1-.5-10A6.5 6.5 0 0 1 19 9a4.5 4.5 0 0 1-1 9z"/>
+                <path d="M12 10v8m-3-5 3-3 3 3"/>
+              </svg>
+            </div>
+
+            <h3>Cloud solutions</h3>
+
+            <p>
+              Cloud setup, migration, deployment, modernization
+              and scalable infrastructure.
+            </p>
+
+            <a href="enquire.html" class="text-link">
+              Explore cloud <span>↗</span>
+            </a>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-card__icon icon-green" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M8 8 4 12l4 4M16 8l4 4-4 4M14 5l-4 14"/>
+              </svg>
+            </div>
+
+            <h3>API &amp; integration</h3>
+
+            <p>
+              Secure APIs and connected systems that help your
+              platforms exchange data reliably.
+            </p>
+
+            <a href="enquire.html" class="text-link">
+              Connect systems <span>↗</span>
+            </a>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-card__icon icon-orange" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 3 20 6v5c0 5-3.4 8.4-8 10-4.6-1.6-8-5-8-10V6z"/>
+                <path d="m8.5 12 2.2 2.2 4.8-5"/>
+              </svg>
+            </div>
+
+            <h3>Security &amp; support</h3>
+
+            <p>
+              Security-conscious implementation, maintenance,
+              monitoring and technical support.
+            </p>
+
+            <a href="enquire.html" class="text-link">
+              Talk to our team <span>↗</span>
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Advanced technology -->
+    <section class="section tile tile--dark" id="advanced">
+      <div class="section-wrap">
+
+        <p class="eyebrow">ADVANCED TECHNOLOGY</p>
+
+        <h2>Modern tools. Meaningful outcomes.</h2>
+
+        <p class="section-lede">
+          We focus on technology that is useful, maintainable and
+          connected to a clear business purpose.
+        </p>
+
+        <div class="tech-grid">
+
+          <article class="tech-card tech-card--wide reveal">
+            <span class="tech-card__word">AI</span>
+
+            <div>
+              <h3>AI &amp; intelligent automation</h3>
+              <p>
+                Practical AI assistants, document processing,
+                repetitive-task automation and decision support.
+              </p>
+            </div>
+          </article>
+
+          <article class="tech-card reveal">
+            <span class="tech-card__word">DATA</span>
+            <h3>Data &amp; analytics</h3>
+            <p>
+              Dashboards, reports and useful insights for
+              better-informed decisions.
+            </p>
+          </article>
+
+          <article class="tech-card reveal">
+            <span class="tech-card__word">CLOUD</span>
+            <h3>Cloud &amp; DevOps</h3>
+            <p>
+              Scalable applications, deployment workflows
+              and system monitoring.
+            </p>
+          </article>
+
+          <article class="tech-card tech-card--wide reveal">
+            <span class="tech-card__word">FLOW</span>
+
+            <div>
+              <h3>Workflow &amp; process automation</h3>
+              <p>
+                Connect people, tasks and business systems to
+                reduce manual work and improve visibility.
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Enterprise solutions -->
+    <section class="section tile tile--paper" id="solutions">
+      <div class="section-wrap">
+
+        <p class="eyebrow">ENTERPRISE SOLUTIONS</p>
+
+        <h2>One connected view of your business.</h2>
+
+        <p class="section-lede">
+          Bring everyday work together through connected applications,
+          automation and reliable integrations.
+        </p>
+
+        <div class="solution-layout">
+
+          <div class="solution-center">
+            <div class="solution-center__ring">
+              <span>GRO</span>
+            </div>
+
+            <b>Your business</b>
+            <small>Connected. Clear. Ready to grow.</small>
+          </div>
+
+          <div class="solution-list">
+
+            <article class="solution-item reveal">
+              <span>01</span>
+              <div>
+                <h3>HRMS solutions</h3>
+                <p>Simplify HR with employee, attendance, leave, and payroll management.</p>
+              </div>
+            </article>
+
+            <article class="solution-item reveal">
+              <span>02</span>
+              <div>
+                <h3>ERP solutions</h3>
+                <p>Connect finance, inventory, operations and reporting.</p>
+              </div>
+            </article>
+
+            <article class="solution-item reveal">
+              <span>03</span>
+              <div>
+                <h3>CRM solutions</h3>
+                <p>Improve customer follow-up, sales visibility and service.</p>
+              </div>
+            </article>
+
+            <article class="solution-item reveal">
+              <span>04</span>
+              <div>
+                <h3>Business automation</h3>
+                <p>Streamline approvals, tasks and recurring processes.</p>
+              </div>
+            </article>
+
+            <article class="solution-item reveal">
+              <span>05</span>
+              <div>
+                <h3>System integration</h3>
+                <p>Help your existing platforms work better together.</p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <div class="section-actions">
+          <a class="btn" href="enquire.html">
+            Explore enterprise solutions <span>→</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Industries -->
+    <section class="section tile tile--white" id="industries">
+      <div class="section-wrap">
+
+        <p class="eyebrow">INDUSTRY SOLUTIONS</p>
+
+        <h2>Designed for the way your industry works.</h2>
+
+        <div class="industry-grid">
+
+          <div class="industry reveal">
+            <span>01</span>
+            <b>Construction &amp; real estate</b>
+          </div>
+
+          <div class="industry reveal">
+            <span>02</span>
+            <b>Manufacturing</b>
+          </div>
+
+          <div class="industry reveal">
+            <span>03</span>
+            <b>Healthcare</b>
+          </div>
+
+          <div class="industry reveal">
+            <span>04</span>
+            <b>Retail &amp; ecommerce</b>
+          </div>
+
+          <div class="industry reveal">
+            <span>05</span>
+            <b>Logistics</b>
+          </div>
+
+          <div class="industry reveal">
+            <span>06</span>
+            <b>Education</b>
+          </div>
+
+          <div class="industry reveal">
+            <span>07</span>
+            <b>Finance</b>
+          </div>
+
+          <div class="industry reveal">
+            <span>08</span>
+            <b>Professional services</b>
+          </div>
+
+        </div>
+
+        <article class="feature-panel reveal">
+
+          <div>
+            <p class="eyebrow">FEATURED SOLUTION</p>
+
+            <h3>Digital tools for builders and construction teams.</h3>
+
+            <p>
+              Manage projects, sites, materials, teams, customers
+              and operational updates with a connected digital workflow.
+            </p>
+
+            <div class="tag-list">
+              <span>Projects</span>
+              <span>Sites</span>
+              <span>Materials</span>
+              <span>Teams</span>
+              <span>Costs</span>
+              <span>Customers</span>
+            </div>
+          </div>
+
+          <div class="building-visual" aria-hidden="true">
+            <div class="building-visual__sun"></div>
+            <div class="building-visual__crane"></div>
+            <div class="building building--small"></div>
+
+            <div class="building building--large">
+              <i></i><i></i><i></i><i></i>
+              <i></i><i></i><i></i><i></i>
+              <i></i><i></i><i></i><i></i>
+            </div>
+
+            <div class="building-visual__ground"></div>
+          </div>
+
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section class="section tile tile--dark" id="process">
+      <div class="section-wrap">
+
+        <p class="eyebrow">HOW WE WORK</p>
+
+        <h2>From first conversation to long-term progress.</h2>
+
+        <div class="process-grid">
+
+          <article class="process-step reveal">
+            <span>01</span>
+            <h3>Discover</h3>
+            <p>Understand your business, users, challenges and goals.</p>
+          </article>
+
+          <article class="process-step reveal">
+            <span>02</span>
+            <h3>Design</h3>
+            <p>Plan the experience, solution architecture and delivery path.</p>
+          </article>
+
+          <article class="process-step reveal">
+            <span>03</span>
+            <h3>Develop</h3>
+            <p>Build, integrate, test and prepare your solution for use.</p>
+          </article>
+
+          <article class="process-step reveal">
+            <span>04</span>
+            <h3>Improve</h3>
+            <p>Maintain, monitor and refine the product as your needs evolve.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section tile tile--paper" id="projects">
+      <div class="section-wrap">
+
+        <p class="eyebrow">FEATURED SOLUTION</p>
+
+        <h2>Built to make everyday work clearer.</h2>
+
+        <article class="case-panel reveal">
+
+          <div class="case-panel__copy">
+            <p class="case-meta">CONSTRUCTION &amp; REAL ESTATE</p>
+
+            <h3>Construction management platform</h3>
+
+            <p>
+              A centralized concept for tracking projects, sites,
+              materials, teams and customers—helping decision-makers
+              view operational progress in one place.
+            </p>
+
+            <a href="enquire.html" class="text-link">
+              Discuss a similar solution <span>↗</span>
+            </a>
+          </div>
+
+          <div class="dashboard" aria-label="Illustrative construction project dashboard">
+
+            <div class="dashboard__top">
+              <span></span><span></span><span></span>
+              <b>Project overview</b>
+            </div>
+
+            <div class="dashboard__body">
+
+              <aside>
+                <i></i><i></i><i></i><i></i><i></i>
+              </aside>
+
+              <div class="dashboard__content">
+
+                <div class="metric-row">
+                  <div>
+                    <small>Active projects</small>
+                    <b>08</b>
+                  </div>
+
+                  <div>
+                    <small>Sites</small>
+                    <b>14</b>
+                  </div>
+
+                  <div>
+                    <small>Tasks tracked</small>
+                    <b>126</b>
+                  </div>
+                </div>
+
+                <div class="chart">
+                  <span style="--bar:38%"></span>
+                  <span style="--bar:55%"></span>
+                  <span style="--bar:44%"></span>
+                  <span style="--bar:72%"></span>
+                  <span style="--bar:61%"></span>
+                  <span style="--bar:88%"></span>
+                  <span style="--bar:76%"></span>
+                </div>
+
+                <div class="dash-lines">
+                  <i></i><i></i><i></i>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </article>
+      </div>
+    </section>
+
+ 
+
+    <!-- Support -->
+    <section class="section tile tile--dark" id="support">
+      <div class="section-wrap support-layout">
+
+        <div>
+          <p class="eyebrow">MAINTENANCE &amp; SUPPORT</p>
+
+          <h2>We stay with you after launch.</h2>
+
+          <p class="section-lede section-lede--left">
+            Deployment is a milestone—not the end. Keep your solution
+            reliable with planned maintenance, monitoring, security
+            improvements and ongoing optimization.
+          </p>
+
+          <a class="btn" href="enquire.html">
+            Talk about support <span>→</span>
+          </a>
+        </div>
+
+        <div class="support-list">
+          <div>
+            <span>01</span>
+            <b>Monitor</b>
+            <small>Watch system health</small>
+          </div>
+
+          <div>
+            <span>02</span>
+            <b>Maintain</b>
+            <small>Keep systems up to date</small>
+          </div>
+
+          <div>
+            <span>03</span>
+            <b>Secure</b>
+            <small>Improve protection</small>
+          </div>
+
+          <div>
+            <span>04</span>
+            <b>Optimize</b>
+            <small>Improve performance</small>
+          </div>
+
+          <div>
+            <span>05</span>
+            <b>Scale</b>
+            <small>Grow easily</small>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section tile tile--paper" id="about">
+      <div class="section-wrap about-wrap">
+
+        <p class="eyebrow">ABOUT GROSUITE</p>
+
+        <h2>Your technology partner for the next stage of growth.</h2>
+
+        <p class="section-lede">
+          GroSuite focuses on practical, scalable and intelligent
+          digital solutions. We help businesses turn ideas and operational
+          challenges into clear technology plans, useful software
+          and connected workflows.
+        </p>
+
+        <div class="values-grid">
+
+          <div>
+            <span>✳</span>
+            <b>Custom by design</b>
+            <p>Solutions aligned with your real requirements.</p>
+          </div>
+
+          <div>
+            <span>⌘</span>
+            <b>Modern technology</b>
+            <p>Tools chosen to fit the problem, not the trend.</p>
+          </div>
+
+          <div>
+            <span>◎</span>
+            <b>Business focused</b>
+            <p>Practical improvements with clear purpose.</p>
+          </div>
+
+          <div>
+            <span>↗</span>
+            <b>Long-term mindset</b>
+            <p>Support that can grow with your business.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+               <!-- Bottom Contact Section -->
+<section class="contact-section" id="contact">
+  <div class="section-wrap contact-section__inner">
+
+    <p class="contact-section__eyebrow">CONTACT</p>
+
+    <h2>Let’s Build Something Better.</h2>
+
+    <div class="contact-card">
+
+      <!-- Contact numbers -->
+      <div class="contact-card__phones">
+
+        <a href="tel:+919942355939" class="contact-phone">
+          +91 99423 55939
+        </a>
+
+        <a href="tel:+919942388951" class="contact-phone">
+          +91 99423 88951
+        </a>
+
+      </div>
+
+      <!-- Enquiry button -->
+      <a href="enquire.html" class="contact-enquire">
+        Send an Enquiry <span aria-hidden="true">↗</span>
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+    <!-- Call to action -->
+    <section class="closing-cta">
+      <div class="section-wrap closing-cta__inner">
+
+        <div>
+          <p class="eyebrow">PERFECT &amp; PROMPT</p>
+
+          <h2>
+            Have a business challenge?<br>
+            Let’s build the solution.
+          </h2>
+
+          <p>
+            Tell us what you want to improve, automate, integrate or create.
+          </p>
+        </div>
+
+        <a class="btn btn--light" href="enquire.html">
+          Make an enquiry <span>↗</span>
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="section-wrap">
+
+      <div class="footer__top">
+
+        <div>
+          <a class="logo" href="index.html" aria-label="GroSuite home">
+            <span>GR</span>
+
+            <svg class="logo__ring" viewBox="0 0 40 40" aria-hidden="true">
+              <path d="M20 4 A16 16 0 0 0 4 20"/>
+              <path d="M20 4 A16 16 0 0 1 36 20"/>
+              <path d="M36 20 A16 16 0 0 1 20 36"/>
+              <path d="M4 20 A16 16 0 0 0 20 36"/>
+            </svg>
+
+            <span>SUITE</span>
+          </a>
+
+          <p class="footer__slogan">PERFECT &amp; PROMPT</p>
+          <p class="footer__desc">Technology that builds your business.</p>
+        </div>
+
+        <div class="footer__links">
+
+          <div>
+            <b>Explore</b>
+            <a href="index.html#services">Services</a>
+            <a href="index.html#solutions">Solutions</a>
+            <a href="index.html#industries">Industries</a>
+            <a href="index.html#projects">Projects</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#contact">Contact</a>
+          </div>
+
+          <div>
+            <b>Connect</b>
+            <a href="partnership.html">Partnership</a>
+            <a href="career.html">Careers</a>
+            <a href="enquire.html">Enquire</a>
+          </div>
+
+        </div>
+
+        <nav class="footer__social" aria-label="Social media">
+
+          <a href="https://www.instagram.com/grosuite_/"
+             target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg viewBox="0 0 24 24">
+              <rect x="3" y="3" width="18" height="18" rx="5"/>
+              <circle cx="12" cy="12" r="4"/>
+              <circle cx="17.5" cy="6.5" r=".8" class="social-fill"/>
+            </svg>
+          </a>
+
+          
+          <a href="https://www.linkedin.com/in/grosuite-hshr-3336a7446?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+             target="_blank" rel="noopener noreferrer"aria-label="LinkedIn">
+             <svg viewBox="0 0 24 24" aria-hidden="true">
+             <rect x="3" y="3" width="18" height="18" rx="0"/>
+             <path d="M7 10v7"/>
+             <circle cx="7" cy="7" r="0.8" class="social-fill"/>
+             <path d="M11 17v-7m0 3a3 3 0 0 1 6 0v4"/>
+            </svg>
+          </a>
+
+
+          <a href="https://www.youtube.com/@HshrSolutions"
+             target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+            <svg viewBox="0 0 24 24">
+              <rect x="3" y="5.5" width="18" height="13" rx="3"/>
+              <path d="m10 9 5 3-5 3z"/>
+            </svg>
+          </a>
+
+          <!-- X (Twitter) -->
+          <a href="https://x.com/GroSuite"
+            class="social-x-link" data-social="x" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+            <svg class="social-x" viewBox="0 0 24 24" aria-hidden="true">
+             <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.637 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932zm-1.291 19.49h2.039L6.486 3.24H4.298z"/>
+            </svg>
+          </a>
+
+          <a href="https://www.facebook.com/profile.php?id=61593358686013"
+             target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <svg viewBox="0 0 24 24">
+              <path d="M14 21v-8h3l.5-3H14V8c0-1 .4-1.7 1.8-1.7H18V3.5c-.6-.1-1.5-.2-2.7-.2-2.8 0-4.6 1.7-4.6 4.8V10H8v3h2.7v8z"/>
+            </svg>
+          </a>
+
+        </nav>
+      </div>
+
+      <div class="footer__bottom">
+        <span>
+          © <span data-year>2026</span> GroSuite. All rights reserved.
+        </span>
+
+        <span>Perfect &amp; Prompt · Built around your business.</span>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>

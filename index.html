@@ -1,0 +1,1271 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>GroSuite | Perfect &amp; Prompt</title>
+
+  <meta name="description"
+    content="GroSuite builds custom software, AI, cloud and enterprise solutions that help growing businesses work smarter.">
+  <meta name="theme-color" content="#070b19">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js"
+      }
+    }
+  </script>
+
+  <script src="js/main.js" defer></script>
+  <script type="module" src="js/scene.js"></script>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <header class="nav" id="top">
+    <div class="nav__row">
+
+      <!-- GroSuite Logo with Slogan -->
+      <a class="logo logo--with-slogan" href="index.html" aria-label="GroSuite home">
+        <span class="logo__wordmark">
+          <span>GR</span>
+          <svg class="logo__ring" viewBox="0 0 40 40" aria-hidden="true">
+            <path d="M18.8 4.05 A16 16 0 0 0 4.05 18.8" />
+            <path d="M21.2 4.05 A16 16 0 0 1 35.95 18.8" />
+            <path d="M35.95 21.2 A16 16 0 0 1 21.2 35.95" />
+            <path d="M4.05 21.2 A16 16 0 0 0 18.8 35.95" />
+          </svg>
+          <span>SUITE</span>
+        </span>
+        <span class="logo__slogan">PERFECT &amp; PROMPT</span>
+      </a>
+
+      <button class="nav__toggle" aria-controls="menu" aria-expanded="false" aria-label="Open navigation menu">
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav__links" id="menu" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <div class="nav__item nav__item--dropdown">
+          <a href="index.html#services" class="nav__has-arrow">Services</a>
+          <div class="nav__submenu">
+            <a href="domain-management.html">Domain Management</a>
+            <a href="api-system-integration.html">API &amp; System Integration</a>
+            <a href="ai-chatbot-development.html">AI &amp; Chatbot Development</a>
+            <a href="mobile-app-development.html">Mobile App Development</a>
+            <a href="business-integration.html">Business Integration</a>
+          </div>
+        </div>
+        <div class="nav__item nav__item--dropdown">
+          <a href="index.html#solutions" class="nav__has-arrow">Solutions</a>
+          <div class="nav__submenu">
+            <a href="hrms-solutions.html">HRMS Solutions</a>
+            <a href="erp-solutions.html">ERP Solutions</a>
+            <a href="crm-solutions.html">CRM Solutions</a>
+            <a href="business-automation.html">Business Automation</a>
+            <a href="system-integration.html">System Integration</a>
+          </div>
+        </div>
+        <div class="nav__item nav__item--dropdown">
+          <a href="index.html#industries" class="nav__has-arrow">Industries</a>
+          <div class="nav__submenu">
+            <a href="index.html#industry-construction">Construction &amp; Real Estate</a>
+            <a href="index.html#industry-manufacturing">Manufacturing</a>
+            <a href="index.html#industry-healthcare">Healthcare</a>
+            <a href="index.html#industry-retail">Retail &amp; E-commerce</a>
+            <a href="index.html#industry-logistics">Logistics &amp; Supply Chain</a>
+            <a href="index.html#industry-education">Education &amp; E-Learning</a>
+            <a href="index.html#industry-finance">Banking &amp; Finance</a>
+            <a href="index.html#industry-services">Professional Services</a>
+          </div>
+        </div>
+        <a href="pricing.html">Pricing</a>
+        <a href="partnership.html">Partnership</a>
+        <div class="nav__item nav__item--dropdown">
+          <a href="resource.html" class="nav__has-arrow">Resources</a>
+          <div class="nav__submenu">
+            <a href="resource.html#webinars">Webinars</a>
+            <a href="resource.html#ppt">Presentations (PPT)</a>
+            <a href="resource.html#videos">Product Videos</a>
+            <a href="resource.html#blog">Blogs &amp; Case Studies</a>
+            <a href="resource.html#featured-hrms-video">HRMS Video Showcase</a>
+          </div>
+        </div>
+        <a href="career.html">Careers</a>
+        <a href="index.html#contact">Contact Us</a>
+        <a class="nav__trial" href="enquire.html">
+          Free Trial <span aria-hidden="true">↗</span>
+        </a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero section-wrap">
+
+      <div class="hero__text">
+        <p class="eyebrow">
+          <span class="eyebrow__dot"></span>
+          Custom Software • AI • Cloud • Enterprise
+        </p>
+
+        <h2>
+          Build smarter.<br>
+          Scale faster.<br>
+          <span class="gradient-text">Go digital.</span>
+        </h2>
+
+        <p class="hero__sub">
+          We design practical, reliable digital solutions that simplify
+          operations, connect teams, automate processes and help your
+          business grow with confidence.
+        </p>
+
+        <div class="actions actions--left">
+          <a class="btn" href="enquire.html">
+            Create Workspace <span aria-hidden="true">→</span>
+          </a>
+
+          <a class="btn btn--ghost" href="#services">
+            Explore Services
+          </a>
+        </div>
+
+        <div class="hero__trust">
+          <span class="trust-dot"></span>
+          Software solutions shaped around your business
+        </div>
+      </div>
+
+      <div class="hero__stage" aria-label="Animated four-colour GroSuite ring representing connected technology">
+
+        <div class="hero__glow"></div>
+        <canvas id="hero-canvas" aria-hidden="true"></canvas>
+
+        <div class="orbit orbit--one" aria-hidden="true"></div>
+        <div class="orbit orbit--two" aria-hidden="true"></div>
+
+        <span class="float float--ai">AI &amp; Automation</span>
+        <span class="float float--cloud">Cloud</span>
+        <span class="float float--data">Data</span>
+        <span class="float float--enterprise">Enterprise</span>
+
+      </div>
+
+    </section>
+
+    <!-- Business approach -->
+    <section class="intro-band">
+      <div class="section-wrap intro-band__inner">
+
+        <p class="eyebrow">TECHNOLOGY THAT BUILDS YOUR BUSINESS</p>
+        <center>
+          <h2>
+            From business challenges<br class="desktop-only">
+            to digital solutions.
+          </h2>
+        </center>
+
+        <p>
+          Custom software, AI, cloud and enterprise systems designed
+          around the way your team works.
+        </p>
+
+        <div class="journey" aria-label="Our approach">
+
+          <div class="journey__item">
+            <span>01</span>
+            <b>Understand</b>
+            <small>Your challenge</small>
+          </div>
+
+          <div class="journey__connector" aria-hidden="true"></div>
+
+          <div class="journey__item">
+            <span>02</span>
+            <b>Build</b>
+            <small>The right solution</small>
+          </div>
+
+          <div class="journey__connector" aria-hidden="true"></div>
+
+          <div class="journey__item">
+            <span>03</span>
+            <b>Improve</b>
+            <small>Every workflow</small>
+          </div>
+
+          <div class="journey__connector" aria-hidden="true"></div>
+
+          <div class="journey__item journey__item--last">
+            <span>04</span>
+            <b>Grow</b>
+            <small>With confidence</small>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section tile tile--white" id="services">
+      <div class="section-wrap">
+
+        <div class="services-header-intro">
+          <p class="eyebrow">OUR SERVICES</p>
+          <h2>Workforce Automation</h2>
+          <div class="workforce-highlights-grid">
+            <div class="workforce-highlight-box">
+              <p class="workforce-highlight-desc">
+                Transform workforce operations with intelligent automation. Automate employee tasks, shift scheduling,
+                approvals and daily workflows to reduce manual work and increase efficiency.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-grid card-grid--services">
+
+          <!-- 1. Domain & Website Management -->
+          <article class="service-card reveal">
+            <div class="service-card__icon icon-blue" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10" />
+                <line x1="2" y1="12" x2="22" y2="12" />
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+              </svg>
+            </div>
+            <h3>Website &amp; Domain Management</h3>
+            <p>
+              Bespoke web development, web apps, business &amp; e-commerce platforms, corporate domain registration, DNS
+              routing, and enterprise SSL security.
+            </p>
+            <a href="domain-management.html" class="text-link">
+              Explore Web &amp; Domain <span>↗</span>
+            </a>
+          </article>
+
+          <!-- 2. API & System Integration -->
+          <article class="service-card reveal">
+            <div class="service-card__icon icon-indigo" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M16 18l6-6-6-6M8 6l-6 6 6 6" />
+                <path d="M14 4l-4 16" />
+              </svg>
+            </div>
+            <h3>API &amp; System Integration</h3>
+            <p>
+              Custom RESTful and GraphQL API development, webhook pipelines, third-party connectors, and seamless data
+              sync between legacy and cloud systems.
+            </p>
+            <a href="api-system-integration.html" class="text-link">
+              Explore API Integration <span>↗</span>
+            </a>
+          </article>
+
+          <!-- 3. AI & Chatbot Development -->
+          <article class="service-card reveal">
+            <div class="service-card__icon icon-purple" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2 2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z" />
+                <rect x="4" y="8" width="16" height="12" rx="3" />
+                <line x1="9" y1="13" x2="9.01" y2="13" />
+                <line x1="15" y1="13" x2="15.01" y2="13" />
+                <path d="M10 17h4" />
+              </svg>
+            </div>
+            <h3>AI &amp; Chatbot Development</h3>
+            <p>
+              Context-aware conversational AI bots, LLM integrations, multi-channel customer support chatbots, and
+              automated intelligent workflows.
+            </p>
+            <a href="ai-chatbot-development.html" class="text-link">
+              Explore AI &amp; Chatbots <span>↗</span>
+            </a>
+          </article>
+
+          <!-- 4. Mobile App Development -->
+          <article class="service-card reveal">
+            <div class="service-card__icon icon-green" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="5" y="2" width="14" height="20" rx="2" ry="2" />
+                <line x1="12" y1="18" x2="12.01" y2="18" />
+              </svg>
+            </div>
+            <h3>Mobile App Development</h3>
+            <p>
+              High-performance native iOS (Swift) &amp; Android (Kotlin) apps, cross-platform Flutter and React Native
+              solutions built for maximum engagement.
+            </p>
+            <a href="mobile-app-development.html" class="text-link">
+              Explore Mobile Apps <span>↗</span>
+            </a>
+          </article>
+
+          <!-- 5. Cloud Development -->
+          <!-- <article class="service-card reveal">
+            <div class="service-card__icon icon-cyan" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z" />
+              </svg>
+            </div>
+            <h3>Cloud Development</h3>
+            <p>
+              Cloud architecture, AWS/Azure/GCP setup, Docker/Kubernetes containerization, automated CI/CD pipelines,
+              and high-availability cloud migration.
+            </p>
+            <a href="cloud-development.html" class="text-link">
+              Explore Cloud Services <span>↗</span>
+            </a>
+          </article> -->
+
+          <!-- 6. Business Integration -->
+          <article class="service-card reveal">
+            <div class="service-card__icon icon-orange" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="3" width="7" height="7" />
+                <rect x="14" y="3" width="7" height="7" />
+                <rect x="14" y="14" width="7" height="7" />
+                <rect x="3" y="14" width="7" height="7" />
+                <path d="M10 6.5h4M6.5 10v4M17.5 10v4M10 17.5h4" />
+              </svg>
+            </div>
+            <h3>Business Integration</h3>
+            <p>
+              Unified workflow connectivity across ERP, CRM, HRMS, and finance tools to eliminate operational silos and
+              synchronize cross-departmental operations.
+            </p>
+            <a href="business-integration.html" class="text-link">
+              Explore Business Integration <span>↗</span>
+            </a>
+          </article>
+
+          <!-- 7. Cyber Security -->
+          <!-- <article class="service-card reveal">
+            <div class="service-card__icon icon-red" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                <path d="m9 12 2 2 4-4" />
+              </svg>
+            </div>
+            <h3>Cyber Security</h3>
+            <p>
+              Proactive vulnerability assessment, zero-trust network access, end-to-end data encryption, compliance
+              governance, and round-the-clock threat mitigation.
+            </p>
+            <a href="cyber-security.html" class="text-link">
+              Explore Cyber Security <span>↗</span>
+            </a>
+          </article> -->
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Advanced technology -->
+    <section class="section tile tile--dark" id="advanced">
+      <div class="section-wrap">
+
+        <p class="eyebrow">ADVANCED TECHNOLOGY</p>
+
+        <h2>Modern tools. Meaningful outcomes.</h2>
+
+        <p class="section-lede">
+          We focus on technology that is useful, maintainable and
+          connected to a clear business purpose.
+        </p>
+
+        <div class="tech-grid">
+
+          <article class="tech-card tech-card--wide reveal">
+            <span class="tech-card__word">AI</span>
+
+            <div>
+              <h3>AI &amp; intelligent automation</h3>
+              <p>
+                Practical AI assistants, document processing,
+                repetitive-task automation and decision support.
+              </p>
+            </div>
+          </article>
+
+          <article class="tech-card reveal">
+            <span class="tech-card__word">DATA</span>
+            <h3>Data &amp; analytics</h3>
+            <p>
+              Dashboards, reports and useful insights for
+              better-informed decisions.
+            </p>
+          </article>
+
+          <article class="tech-card reveal">
+            <span class="tech-card__word">CLOUD</span>
+            <h3>Cloud &amp; DevOps</h3>
+            <p>
+              Scalable applications, deployment workflows
+              and system monitoring.
+            </p>
+          </article>
+
+          <article class="tech-card tech-card--wide reveal">
+            <span class="tech-card__word">FLOW</span>
+
+            <div>
+              <h3>Workflow &amp; process automation</h3>
+              <p>
+                Connect people, tasks and business systems to
+                reduce manual work and improve visibility.
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Enterprise solutions -->
+    <section class="section tile tile--paper" id="solutions">
+      <div class="section-wrap">
+
+        <p class="eyebrow">ENTERPRISE SOLUTIONS</p>
+
+        <h2>One connected view of your business.</h2>
+
+        <p class="section-lede">
+          Bring everyday work together through connected applications,
+          automation and reliable integrations.
+        </p>
+
+        <div class="solution-layout">
+
+          <div class="solution-visual reveal">
+            <div class="solution-visual__media">
+              <img src="assets/unique-enterprise-solutions.jpg"
+                alt="Connected Enterprise Software Ecosystem - HRMS, ERP, CRM, Automation and Integration" width="700"
+                height="525" loading="lazy" />
+            </div>
+          </div>
+
+          <div class="solution-list">
+
+            <a class="solution-item solution-item--link reveal" href="hrms-solutions.html"
+              aria-label="Explore GroSuite HRMS solutions">
+              <span>01</span>
+              <div>
+                <h3>HRMS solutions <span class="solution-arrow" aria-hidden="true">→</span></h3>
+                <p>Simplify HR with employee, attendance, leave, and payroll management.</p>
+              </div>
+            </a>
+
+            <a class="solution-item solution-item--link reveal" href="erp-solutions.html"
+              aria-label="Explore GroSuite ERP solutions">
+              <span>02</span>
+              <div>
+                <h3>ERP solutions <span class="solution-arrow" aria-hidden="true">→</span></h3>
+                <p>Connect finance, inventory, operations and reporting.</p>
+              </div>
+            </a>
+
+            <a class="solution-item solution-item--link reveal" href="crm-solutions.html"
+              aria-label="Explore GroSuite CRM solutions">
+              <span>03</span>
+              <div>
+                <h3>CRM solutions <span class="solution-arrow" aria-hidden="true">→</span></h3>
+                <p>Improve customer follow-up, sales visibility and service.</p>
+              </div>
+            </a>
+
+            <a class="solution-item solution-item--link reveal" href="business-automation.html"
+              aria-label="Explore GroSuite Business automation solutions">
+              <span>04</span>
+              <div>
+                <h3>Business automation <span class="solution-arrow" aria-hidden="true">→</span></h3>
+                <p>Streamline approvals, tasks and recurring processes.</p>
+              </div>
+            </a>
+
+            <a class="solution-item solution-item--link reveal" href="system-integration.html"
+              aria-label="Explore GroSuite System integration solutions">
+              <span>05</span>
+              <div>
+                <h3>System integration <span class="solution-arrow" aria-hidden="true">→</span></h3>
+                <p>Help your existing platforms work better together.</p>
+              </div>
+            </a>
+
+          </div>
+        </div>
+
+        <div class="section-actions">
+          <a class="btn" href="enquire.html">
+            Explore enterprise solutions <span>→</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Industries -->
+    <section class="section tile tile--white" id="industries">
+      <div class="section-wrap">
+
+        <p class="eyebrow">INDUSTRY SOLUTIONS</p>
+
+        <h2>Designed for the way your industry works.</h2>
+
+        <div class="industry-grid">
+
+          <!-- 01: Construction & Real Estate -->
+          <div class="industry reveal" id="industry-construction">
+            <div class="industry-header">
+              <span class="industry-num">01</span>
+              <b>Construction &amp; Real Estate</b>
+            </div>
+            <p class="industry-desc">
+              Manage multi-site workforce, raw material procurement, subcontractor billing, project milestones, and
+              client handoffs.
+            </p>
+            <div class="industry-tags">
+              <span>Site Monitoring</span>
+              <span>Material ERP</span>
+              <span>Billing</span>
+            </div>
+          </div>
+
+          <!-- 02: Manufacturing -->
+          <div class="industry reveal" id="industry-manufacturing">
+            <div class="industry-header">
+              <span class="industry-num">02</span>
+              <b>Manufacturing &amp; Production</b>
+            </div>
+            <p class="industry-desc">
+              Streamline shop floor scheduling, bill of materials (BOM), machine telemetry, quality control, and
+              inventory sync.
+            </p>
+            <div class="industry-tags">
+              <span>BOM Control</span>
+              <span>Machine Telemetry</span>
+              <span>QC</span>
+            </div>
+          </div>
+
+          <!-- 03: Healthcare -->
+          <div class="industry reveal" id="industry-healthcare">
+            <div class="industry-header">
+              <span class="industry-num">03</span>
+              <b>Healthcare &amp; Life Sciences</b>
+            </div>
+            <p class="industry-desc">
+              Digitize doctor-patient scheduling, staff shift rostering, HIPAA-compliant EHR data, and medical supply
+              tracking.
+            </p>
+            <div class="industry-tags">
+              <span>EHR Security</span>
+              <span>Staff Rosters</span>
+              <span>Supplies</span>
+            </div>
+          </div>
+
+          <!-- 04: Retail & E-commerce -->
+          <div class="industry reveal" id="industry-retail">
+            <div class="industry-header">
+              <span class="industry-num">04</span>
+              <b>Retail &amp; E-commerce</b>
+            </div>
+            <p class="industry-desc">
+              Connect physical POS counters, e-commerce storefronts, automated WhatsApp cart recovery, and warehouse
+              dispatch.
+            </p>
+            <div class="industry-tags">
+              <span>Omnichannel POS</span>
+              <span>Cart Recovery</span>
+              <span>Fulfillment</span>
+            </div>
+          </div>
+
+          <!-- 05: Logistics -->
+          <div class="industry reveal" id="industry-logistics">
+            <div class="industry-header">
+              <span class="industry-num">05</span>
+              <b>Logistics &amp; Supply Chain</b>
+            </div>
+            <p class="industry-desc">
+              Track vehicle fleets with live GPS, automate route dispatching, monitor freight expenses, and capture
+              instant e-POD.
+            </p>
+            <div class="industry-tags">
+              <span>Fleet Telemetry</span>
+              <span>Route Optimization</span>
+              <span>e-POD</span>
+            </div>
+          </div>
+
+          <!-- 06: Education -->
+          <div class="industry reveal" id="industry-education">
+            <div class="industry-header">
+              <span class="industry-num">06</span>
+              <b>Education &amp; E-Learning</b>
+            </div>
+            <p class="industry-desc">
+              Simplify student enrollment, fee collections, faculty management, attendance tracking, and parent
+              communication apps.
+            </p>
+            <div class="industry-tags">
+              <span>Fee Automation</span>
+              <span>Attendance</span>
+              <span>LMS Apps</span>
+            </div>
+          </div>
+
+          <!-- 07: Banking & Finance -->
+          <div class="industry reveal" id="industry-finance">
+            <div class="industry-header">
+              <span class="industry-num">07</span>
+              <b>Banking &amp; Financial Services</b>
+            </div>
+            <p class="industry-desc">
+              Automate multi-gateway ledger reconciliation, fraud detection, regulatory audit reporting, and client
+              portals.
+            </p>
+            <div class="industry-tags">
+              <span>Ledger Sync</span>
+              <span>Fraud Detection</span>
+              <span>Audit Trails</span>
+            </div>
+          </div>
+
+          <!-- 08: Professional Services -->
+          <div class="industry reveal" id="industry-services">
+            <div class="industry-header">
+              <span class="industry-num">08</span>
+              <b>Professional Services</b>
+            </div>
+            <p class="industry-desc">
+              Power agencies, legal firms, and consultants with billable hour logs, client collaboration portals, and
+              milestone invoices.
+            </p>
+            <div class="industry-tags">
+              <span>Time Billing</span>
+              <span>Client Portals</span>
+              <span>Invoicing</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- <article class="feature-panel reveal">
+
+          <div>
+            <p class="eyebrow">FEATURED SOLUTION</p>
+
+            <h3>Digital tools for builders and construction teams.</h3>
+
+            <p>
+              Manage projects, sites, materials, teams, customers
+              and operational updates with a connected digital workflow.
+            </p>
+
+            <div class="tag-list">
+              <span>Projects</span>
+              <span>Sites</span>
+              <span>Materials</span>
+              <span>Teams</span>
+              <span>Costs</span>
+              <span>Customers</span>
+            </div>
+          </div>
+
+          <div class="building-visual" aria-hidden="true">
+            <div class="building-visual__sun"></div>
+            <div class="building-visual__crane"></div>
+            <div class="building building--small"></div>
+
+            <div class="building building--large">
+              <i></i><i></i><i></i><i></i>
+              <i></i><i></i><i></i><i></i>
+              <i></i><i></i><i></i><i></i>
+            </div>
+
+            <div class="building-visual__ground"></div>
+          </div>
+
+        </article> -->
+
+      </div>
+    </section>
+
+    <!-- Process -->
+    <!-- <section class="section tile tile--dark" id="process">
+      <div class="section-wrap">
+
+        <p class="eyebrow">HOW WE WORK</p>
+
+        <h2>From first conversation to long-term progress.</h2>
+
+        <div class="process-grid">
+
+          <article class="process-step reveal">
+            <span>01</span>
+            <h3>Discover</h3>
+            <p>Understand your business, users, challenges and goals.</p>
+          </article>
+
+          <article class="process-step reveal">
+            <span>02</span>
+            <h3>Design</h3>
+            <p>Plan the experience, solution architecture and delivery path.</p>
+          </article>
+
+          <article class="process-step reveal">
+            <span>03</span>
+            <h3>Develop</h3>
+            <p>Build, integrate, test and prepare your solution for use.</p>
+          </article>
+
+          <article class="process-step reveal">
+            <span>04</span>
+            <h3>Improve</h3>
+            <p>Maintain, monitor and refine the product as your needs evolve.</p>
+          </article>
+
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Projects
+    <section class="section tile tile--paper" id="projects">
+      <div class="section-wrap">
+
+        <p class="eyebrow">FEATURED SOLUTION</p>
+
+        <h2>Built to make everyday work clearer.</h2>
+
+        <article class="case-panel reveal">
+
+          <div class="case-panel__copy">
+            <p class="case-meta">CONSTRUCTION &amp; REAL ESTATE</p>
+
+            <h3>Construction management platform</h3>
+
+            <p>
+              A centralized concept for tracking projects, sites,
+              materials, teams and customers—helping decision-makers
+              view operational progress in one place.
+            </p>
+
+            <a href="enquire.html" class="text-link">
+              Discuss a similar solution <span>↗</span>
+            </a>
+          </div>
+
+          <div class="dashboard" aria-label="Illustrative construction project dashboard">
+
+            <div class="dashboard__top">
+              <span></span><span></span><span></span>
+              <b>Project overview</b>
+            </div>
+
+            <div class="dashboard__body">
+
+              <aside>
+                <i></i><i></i><i></i><i></i><i></i>
+              </aside>
+
+              <div class="dashboard__content">
+
+                <div class="metric-row">
+                  <div>
+                    <small>Active projects</small>
+                    <b>08</b>
+                  </div>
+
+                  <div>
+                    <small>Sites</small>
+                    <b>14</b>
+                  </div>
+
+                  <div>
+                    <small>Tasks tracked</small>
+                    <b>126</b>
+                  </div>
+                </div>
+
+                <div class="chart">
+                  <span style="--bar:38%"></span>
+                  <span style="--bar:55%"></span>
+                  <span style="--bar:44%"></span>
+                  <span style="--bar:72%"></span>
+                  <span style="--bar:61%"></span>
+                  <span style="--bar:88%"></span>
+                  <span style="--bar:76%"></span>
+                </div>
+
+                <div class="dash-lines">
+                  <i></i><i></i><i></i>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </article>
+      </div>
+    </section>
+
+
+
+    <!-- Support --
+    <section class="section tile tile--dark" id="support">
+      <div class="section-wrap support-layout">
+
+        <div>
+          <p class="eyebrow">MAINTENANCE &amp; SUPPORT</p>
+
+          <h2>We stay with you after launch.</h2>
+
+          <p class="section-lede section-lede--left">
+            Deployment is a milestone—not the end. Keep your solution
+            reliable with planned maintenance, monitoring, security
+            improvements and ongoing optimization.
+          </p>
+
+          <a class="btn" href="enquire.html">
+            Talk about support <span>→</span>
+          </a>
+        </div>
+
+        <div class="support-list">
+          <div>
+            <span>01</span>
+            <b>Monitor</b>
+            <small>Watch system health</small>
+          </div>
+
+          <div>
+            <span>02</span>
+            <b>Maintain</b>
+            <small>Keep systems up to date</small>
+          </div>
+
+          <div>
+            <span>03</span>
+            <b>Secure</b>
+            <small>Improve protection</small>
+          </div>
+
+          <div>
+            <span>04</span>
+            <b>Optimize</b>
+            <small>Improve performance</small>
+          </div>
+
+          <div>
+            <span>05</span>
+            <b>Scale</b>
+            <small>Grow easily</small>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- About --
+    <section class="section tile tile--paper" id="about">
+      <div class="section-wrap about-wrap">
+
+        <p class="eyebrow">GROSUITE</p>
+
+        <h2>Your technology partner for the next stage of growth.</h2>
+
+        <p class="section-lede">
+          GroSuite focuses on practical, scalable and intelligent
+          digital solutions. We help businesses turn ideas and operational
+          challenges into clear technology plans, useful software
+          and connected workflows.
+        </p>
+
+        <div class="values-grid">
+
+          <div>
+            <span>✳</span>
+            <b>Custom by design</b>
+            <p>Solutions aligned with your real requirements.</p>
+          </div>
+
+          <div>
+            <span>⌘</span>
+            <b>Modern technology</b>
+            <p>Tools chosen to fit the problem, not the trend.</p>
+          </div>
+
+          <div>
+            <span>◎</span>
+            <b>Business focused</b>
+            <p>Practical improvements with clear purpose.</p>
+          </div>
+
+          <div>
+            <span>↗</span>
+            <b>Long-term mindset</b>
+            <p>Support that can grow with your business.</p>
+          </div>
+
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Bottom Contact / Enquire Showcase Section -->
+    <section class="enquire-showcase-section" id="contact">
+      <div class="section-wrap enquire-showcase-grid">
+
+        <!-- Left Contact Information -->
+        <div class="enquire-showcase__left">
+          <p class="contact-section__eyebrow"
+            style="color: #70a6ff; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 0.8rem; font-size: 0.88rem; text-align: left;">
+            CONTACT US</p>
+          <h1 class="enquire-talk-title">Let's Talk and Connect!</h1>
+          <p class="enquire-talk-sub">Our Team Is Here To Help!</p>
+
+          <!-- 1. Interested in Product Demo? with QR Code -->
+          <div class="enquire-contact-block">
+            <h2 class="enquire-contact-heading">Interested in Product Demo?</h2>
+            <div class="enquire-demo-row">
+              <div class="enquire-contact-list">
+                <a href="tel:+919942355939" class="enquire-contact-link">
+                  <svg class="enquire-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                    </path>
+                  </svg>
+                  <span>+91 99423 55939</span>
+                </a>
+
+                <a href="tel:+919942388951" class="enquire-contact-link">
+                  <svg class="enquire-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                    </path>
+                  </svg>
+                  <span>+91 99423 88951</span>
+                </a>
+
+                <a href="mailto:sales@grosuite.in" class="enquire-contact-link">
+                  <svg class="enquire-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                  <span>sales@grosuite.in</span>
+                </a>
+              </div>
+
+              <!-- QR Code Card -->
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSdOj2SN0M-FPZ6ZBMxym0dIGrukj4t2u1Z2P3duQaifSn7CQw/viewform?usp=dialog"
+                target="_blank" rel="noopener noreferrer" class="enquire-qr-card"
+                aria-label="Scan QR code or click to open Google Form">
+                <img src="assets/grosuite-qr-code.jpg" alt="Scan QR Code to Connect with GroSuite"
+                  class="enquire-qr-img" width="95" height="95">
+                <span class="enquire-qr-label">Scan to Connect</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- 2. Need help? -->
+          <div class="enquire-contact-block">
+            <h2 class="enquire-contact-heading">Need help?</h2>
+            <p class="enquire-contact-note">Our support team is here to help you.</p>
+            <div class="enquire-contact-list">
+              <a href="mailto:support@grosuite.in" class="enquire-contact-link">
+                <svg class="enquire-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <span>support@grosuite.in</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- 3. Social Media Links -->
+          <div class="enquire-contact-block enquire-social-block">
+            <h2 class="enquire-contact-heading">Connect With Us</h2>
+            <div class="enquire-social-links" aria-label="Social media links">
+              <a href="https://wa.me/919942355939?text=Hi%20GroSuite%20Team%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services."
+                target="_blank" rel="noopener noreferrer" class="enquire-social-btn enquire-social-whatsapp"
+                aria-label="WhatsApp">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.82 11.82 0 00-3.48-8.413z" />
+                </svg>
+              </a>
+
+              <a href="https://www.instagram.com/grosuite_/" target="_blank" rel="noopener noreferrer"
+                class="enquire-social-btn" aria-label="Instagram">
+                <svg viewBox="0 0 24 24">
+                  <rect x="3" y="3" width="18" height="18" rx="5" />
+                  <circle cx="12" cy="12" r="4" />
+                  <circle cx="17.5" cy="6.5" r=".8" class="social-fill" />
+                </svg>
+              </a>
+
+              <a href="https://www.linkedin.com/in/grosuite-hshr-3336a7446?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                target="_blank" rel="noopener noreferrer" class="enquire-social-btn" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <rect x="3" y="3" width="18" height="18" rx="0" />
+                  <path d="M7 10v7" />
+                  <circle cx="7" cy="7" r="0.8" class="social-fill" />
+                  <path d="M11 17v-7m0 3a3 3 0 0 1 6 0v4" />
+                </svg>
+              </a>
+
+              <a href="https://www.youtube.com/@HshrSolutions" target="_blank" rel="noopener noreferrer"
+                class="enquire-social-btn" aria-label="YouTube">
+                <svg viewBox="0 0 24 24">
+                  <rect x="3" y="5.5" width="18" height="13" rx="3" />
+                  <path d="m10 9 5 3-5 3z" />
+                </svg>
+              </a>
+
+              <a href="https://x.com/GroSuite" target="_blank" rel="noopener noreferrer" class="enquire-social-btn"
+                aria-label="X (Twitter)">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.637 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932zm-1.291 19.49h2.039L6.486 3.24H4.298z" />
+                </svg>
+              </a>
+
+              <a href="https://www.facebook.com/profile.php?id=61593358686013" target="_blank" rel="noopener noreferrer"
+                class="enquire-social-btn" aria-label="Facebook">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M14 21v-8h3l.5-3H14V8c0-1 .4-1.7 1.8-1.7H18V3.5c-.6-.1-1.5-.2-2.7-.2-2.8 0-4.6 1.7-4.6 4.8V10H8v3h2.7v8z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Detailed Form Card -->
+        <div class="enquire-showcase__right">
+          <div class="enquire-card">
+            <div class="enquire-card__brand-line" aria-hidden="true"></div>
+
+            <form id="contact-enquiry-form" class="enquiry-form" data-email-form="enquiry"
+              action="https://formsubmit.app/f/fhydgy6ynj" method="POST" enctype="multipart/form-data">
+
+              <input type="hidden" name="_subject" value="GroSuite Schedule a Demo &amp; Enquiry (Home Contact)">
+              <input type="hidden" name="_template" value="table">
+              <input type="hidden" name="_replyto" value="">
+              <input type="text" name="_honey" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+              <div class="enquire-form-fields">
+
+                <!-- First Name -->
+                <div>
+                  <input id="contact-first-name" class="enquire-input" name="first_name" type="text"
+                    placeholder="First Name*" autocomplete="given-name" maxlength="50" required>
+                </div>
+
+                <!-- Last Name -->
+                <div>
+                  <input id="contact-last-name" class="enquire-input" name="last_name" type="text"
+                    placeholder="Last Name*" autocomplete="family-name" maxlength="50" required>
+                </div>
+
+                <!-- Phone -->
+                <div>
+                  <input id="contact-phone" class="enquire-input" name="phone" type="tel" placeholder="Phone*"
+                    autocomplete="tel" inputmode="tel" pattern="[+0-9() .-]{7,20}" maxlength="20" required>
+                </div>
+
+                <!-- Email -->
+                <div>
+                  <input id="contact-email" class="enquire-input" name="email" type="email" placeholder="Email*"
+                    autocomplete="email" maxlength="254" required>
+                </div>
+
+                <!-- Company Name -->
+                <div>
+                  <input id="contact-company" class="enquire-input" name="company" type="text"
+                    placeholder="Company Name*" autocomplete="organization" maxlength="100" required>
+                </div>
+
+                <!-- Company Location -->
+                <div>
+                  <input id="contact-location" class="enquire-input" name="company_location" type="text"
+                    placeholder="Company Location*" maxlength="120" required>
+                </div>
+
+                <!-- Employee Count -->
+                <div class="enquire-field-full">
+                  <select id="contact-emp-count" class="enquire-select" name="employee_count" required>
+                    <option value="" disabled selected>Employee Count*</option>
+                    <option value="1-10">1 - 10 Employees</option>
+                    <option value="11-50">11 - 50 Employees</option>
+                    <option value="51-200">51 - 200 Employees</option>
+                    <option value="201-500">201 - 500 Employees</option>
+                    <option value="500+">500+ Employees</option>
+                  </select>
+                </div>
+
+                <!-- Message -->
+                <div class="enquire-field-full">
+                  <textarea id="contact-message" class="enquire-textarea" name="message" rows="4" placeholder="Message"
+                    maxlength="5000" required></textarea>
+                </div>
+
+                <!-- Consent checkbox -->
+                <div class="enquire-field-full">
+                  <label class="enquire-consent">
+                    <input type="checkbox" name="consent" required checked>
+                    <span>I agree to receive communications and follow-ups from the GroSuite team regarding my
+                      enquiry.</span>
+                  </label>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="enquire-field-full">
+                  <button class="btn btn-schedule-demo" type="submit">
+                    Submit <span aria-hidden="true">→</span>
+                  </button>
+                </div>
+
+                <!-- Status Feedback -->
+                <div class="enquire-field-full">
+                  <p class="form-status" role="status" aria-live="polite"></p>
+                </div>
+
+              </div>
+
+            </form>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="section-wrap">
+
+      <div class="footer__top">
+
+        <div class="footer__brand">
+          <a class="footer__logo" href="index.html" aria-label="GroSuite home">
+            <span class="logo__wordmark">
+              <span>GR</span>
+              <svg class="logo__ring" viewBox="0 0 40 40" aria-hidden="true">
+                <path d="M18.8 4.05 A16 16 0 0 0 4.05 18.8" />
+                <path d="M21.2 4.05 A16 16 0 0 1 35.95 18.8" />
+                <path d="M35.95 21.2 A16 16 0 0 1 21.2 35.95" />
+                <path d="M4.05 21.2 A16 16 0 0 0 18.8 35.95" />
+              </svg>
+              <span>SUITE</span>
+            </span>
+            <span class="logo__slogan footer__slogan">PERFECT &amp; PROMPT</span>
+          </a>
+        </div>
+
+        <div class="footer__actions">
+          <div class="footer__partner">
+            <img src="assets/hshr-logo.png" alt="HSHR Consultancy Pvt Ltd" class="footer__partner-logo" width="130"
+              height="63" loading="lazy">
+          </div>
+          <a href="https://wa.me/919942355939?text=Hi%20GroSuite%20Team%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services."
+            target="_blank" rel="noopener noreferrer" class="footer__whatsapp-cta" aria-label="Message us on WhatsApp">
+            <svg viewBox="0 0 24 24" class="footer__whatsapp-icon" aria-hidden="true" fill="currentColor">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.82 11.82 0 00-3.48-8.413z" />
+            </svg>
+            <span>Message us on WhatsApp</span>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Mega Footer Navigation: All Header Categories & Subheadings -->
+      <div class="footer__links">
+
+        <div>
+          <b>Services</b>
+          <a href="domain-management.html">Domain Management</a>
+          <a href="api-system-integration.html">API &amp; System Integration</a>
+          <a href="ai-chatbot-development.html">AI &amp; Chatbot Development</a>
+          <a href="mobile-app-development.html">Mobile App Development</a>
+          <a href="business-integration.html">Business Integration</a>
+        </div>
+
+        <div>
+          <b>Solutions</b>
+          <a href="hrms-solutions.html">HRMS Solutions</a>
+          <a href="erp-solutions.html">ERP Solutions</a>
+          <a href="crm-solutions.html">CRM Solutions</a>
+          <a href="business-automation.html">Business Automation</a>
+          <a href="system-integration.html">System Integration</a>
+        </div>
+
+        <div>
+          <b>Industries</b>
+          <a href="index.html#industry-construction">Construction &amp; Real Estate</a>
+          <a href="index.html#industry-manufacturing">Manufacturing</a>
+          <a href="index.html#industry-healthcare">Healthcare</a>
+          <a href="index.html#industry-retail">Retail &amp; E-commerce</a>
+          <a href="index.html#industry-logistics">Logistics &amp; Supply Chain</a>
+          <a href="index.html#industry-education">Education &amp; E-Learning</a>
+          <a href="index.html#industry-finance">Banking &amp; Finance</a>
+          <a href="index.html#industry-services">Professional Services</a>
+        </div>
+
+        <div>
+          <b>Resources</b>
+          <a href="resource.html#webinars">Webinars</a>
+          <a href="resource.html#ppt">Presentations (PPT)</a>
+          <a href="resource.html#videos">Product Videos</a>
+          <a href="resource.html#blog">Blogs &amp; Case Studies</a>
+          <a href="resource.html#featured-hrms-video">HRMS Video Showcase</a>
+        </div>
+
+        <div>
+          <b>Company</b>
+          <a href="index.html">Home</a>
+          <a href="partnership.html">Partnership</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="career.html">Careers</a>
+          <a href="index.html#contact">Contact Us</a>
+          <a href="enquire.html">Free Trial</a>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <span>© <span data-year>2026</span> GroSuite. All rights reserved.</span>
+        <span>Perfect &amp; Prompt · Built around your business.</span>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+
+</html>
